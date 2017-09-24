@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>The Game</title>
+    <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" integrity="sha384-dNpIIXE8U05kAbPhy3G1cz+yZmTzA6CY8Vg/u2L9xRnHjJiAK76m2BIEaSEV+/aU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <header class="container align-self-center">
+        <h1 class="display-2 text-center">
+            Tic Toe Game
+        </h1>
+        <h5 class="text-center">Choose your hero</h5>
+        <div class="text-center mb-3">
+            <div class="form-check">
+                <label class="form-check-label">
+                          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="X" checked>
+                          <i class="fa fa-window-close-o" aria-hidden="true"></i>                          
+                        </label>
+            </div>
+            <div class="form-check">
+                <label class="form-check-label">
+                          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="O">
+                          <i class="fa fa-circle-o" aria-hidden="true"></i>
+                        </label>
+            </div>
+            <button id="startGame" type="button" class="btn btn-lg btn-dark">Start Game</button>
+        </div>
+    </header>
+
+    <div id="game" class="container align-self-center game hide mt-5">
+        <div class="row">
+            <div class="col">
+                <div id="field1" class="field">
+                    <p id="field_text1" class="text-center mt-4"></p>
+                </div>
+            </div>
+            <div class="col">
+                <div id="field2" class="field">
+                    <p id="field_text2" class="text-center mt-4"></p>
+                </div>
+            </div>
+            <div class="col">
+                <div id="field3" class="field">
+                    <p id="field_text3" class="text-center mt-4"></p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div id="field4" class="field">
+                    <p id="field_text4" class="text-center mt-4"></p>
+                </div>
+            </div>
+            <div class="col">
+                <div id="field5" class="field">
+                    <p id="field_text5" class="text-center mt-4"></p>
+                </div>
+            </div>
+            <div class="col">
+                <div id="field6" class="field">
+                    <p id="field_text6" class="text-center mt-4"></p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div id="field7" class="field">
+                    <p id="field_text7" class="text-center mt-4"></p>
+                </div>
+            </div>
+            <div class="col">
+                <div id="field8" class="field">
+                    <p id="field_text8" class="text-center mt-4"></p>
+                </div>
+            </div>
+            <div class="col">
+                <div id="field9" class="field">
+                    <p id="field_text9" class="text-center mt-4"></p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div id="showResult" class="container align-self-center hide mt-5 text-center">
+                    <h1 class="display-5 text-center"></h1>
+                    <button id="newGame" type="button" class="btn btn-lg btn-dark">Restart</button>                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>

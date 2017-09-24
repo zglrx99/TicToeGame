@@ -1,0 +1,14 @@
+.field {
+    border: 3px solid black;
+    border-color: darkgray;
+    height: 100px;
+}
+
+.game {
+    height: 450px;
+    width: 450px;
+}
+
+.hide {
+    display: none;
+}
